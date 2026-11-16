@@ -1,0 +1,82 @@
+/* Configurações gerais do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f2f6;
+    color: #2f3542;
+    line-height: 1.6;
+}
+
+/* ID do contêiner principal: aplica Flexbox para alinhar as seções lado a lado */
+#container-secoes {
+    display: flex;              /* Ativa o modelo Flexbox */
+    justify-content: space-between; /* Distribui espaço igual entre as colunas */
+    gap: 20px;                  /* Espaçamento entre os cards */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Classe que padroniza cada uma das três seções */
+.card-secao {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;                    /* Faz com que as 3 colunas tenham a mesma largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Classe para padronizar os títulos das seções */
+.titulo-secao {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4757;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f1f2f6;
+    padding-bottom: 8px;
+}
+
+/* Organiza as imagens dentro de cada seção */
+.galeria-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+/* Padroniza o tamanho e o acabamento das imagens */
+.imagem-ilustrativa {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.imagem-ilustrativa:hover {
+    transform: scale(1.03); /* Aumenta levemente o tamanho da imagem (zoom de 3%) */
+    filter: brightness(1.1); /* Deixa a imagem um pouco mais brilhante */
+}
+
+/* Classe para padronizar a fonte/legenda das imagens */
+.legenda-fonte {
+    font-size: 0.75rem;
+    color: #747d8c;
+    font-style: italic;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Estilização dos parágrafos explicativos */
+.texto-explicativo {
+    font-size: 0.95rem;
+    color: #2f3542;
+    text-align: justify;
+}
+
+/* Responsividade: empilha as seções em telas menores (celulares/tablets) */
+@media (max-width: 768px) {
+    #container-secoes {
+        flex-direction: column;
+    }
+}

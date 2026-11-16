@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- 1. Vinculação do CSS Reset (sempre primeiro) -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- 2. Vinculação do CSS Externo principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 3. CSS Interno: estilizando o cabeçalho principal da página -->
+    <style>
+        #cabecalho-principal {
+            background-color: #1e1e2f;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 4px solid #ff4757;
+        }
+
+        #cabecalho-principal h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho utilizando ID estilizado via CSS Interno -->
+    <header id="cabecalho-principal">
+        <h1>Meu Portal de Entretenimento Digital</h1>
+        <p>Descubra as melhores novidades sobre cinema, música e tecnologia.</p>
+    </header>
+
+    <!-- Contêiner Flexbox que organiza as 3 seções lado a lado -->
+    <main id="container-secoes">
+
+        <!-- Seção 1: Filmes e Séries -->
+        <section class="card-secao">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            
+            <div class="galeria-imagens">
+                <a href="https://www.omelete.com.br/filmes/melhores-filmes-2026" target="_blank">
+                <img src="imgs/tela-de-cinema.jfif" alt="Tela de cinema" class="imagem-ilustrativa">
+                </a>
+                <a href="https://www.omelete.com.br/series-tv/melhores-series-2026" target="_blank">
+                <img src="imgs/series.jfif" alt="Séries em alta" class="imagem-ilustrativa">
+                </a>
+            </div>
+            <span class="legenda-fonte">Fonte: Ilustração própria / Acervo do Portal</span>
+
+            <p class="texto-explicativo">
+                Acompanhe os lançamentos mais aguardados dos cinemas e das plataformas de streaming. 
+                Aqui você encontra análises de roteiros, curiosidades de bastidores e recomendações semanais.
+                Acima esta a galeria de imagens com links para as páginas de filmes e séries mais assistidas de 2026.
+            </p>
+        </section>
+
+        <!-- Seção 2: Música e Podcasts -->
+        <section class="card-secao">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+            
+            <div class="galeria-imagens">
+                <a href="https://open.spotify.com/playlist/0Sbjnr7ivmZA6NM4s7sRdH" target="_blank">
+                <img src="imgs/fones.jpg" alt="Fones de ouvido" class="imagem-ilustrativa">
+                </a>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DXargIDjQKYs0" target="_blank">
+                <img src="imgs/podcast.png" alt="Microfone de podcast" class="imagem-ilustrativa">
+                </a>
+            </div>
+            <span class="legenda-fonte">Fonte: Ilustração própria / Acervo do Portal</span>
+
+            <p class="texto-explicativo">
+                Explore playlists temáticas, novos álbuns e os podcasts mais ouvidos do momento. 
+                Do rock clássico aos debates sobre cultura pop, há sempre algo novo para dar o play.
+            </p>
+        </section>
+
+        <!-- Seção 3: Games e Tecnologia -->
+        <section class="card-secao">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+            
+            <div class="galeria-imagens">
+                <a href="https://www.ign.com/games" target="_blank">
+                <img src="imgs/controle.jpg" alt="Controle de videogame" class="imagem-ilustrativa">
+                </a>
+                <a href="https://www.techradar.com/news" target="_blank">
+                <img src="imgs/hardware.jfif" alt="Hardware e tecnologia" class="imagem-ilustrativa">
+                </a>
+            </div>
+            <span class="legenda-fonte">Fonte: Ilustração própria / Acervo do Portal</span>
+
+            <p class="texto-explicativo">
+                Fique por dentro dos lançamentos de jogos para consoles e PC, além das tendências em 
+                inteligência artificial, realidade virtual e gadgets que transformam o dia a dia.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé utilizando CSS Inline conforme solicitado nos requisitos -->
+    <footer style="background-color: #1e1e2f; color: #cccccc; text-align: center; padding: 15px; margin-top: 30px; font-size: 0.9rem;">
+        <p>Desenvolvido por Renan para Atividade de CSS — Agenda 13 &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
